@@ -1,14 +1,16 @@
 
+import React from 'react';
 import './App.css';
-import Search from './components/search/search';
+class App extends React.Component{
 
-function App() {
-  return (
-    <div className='container'>
-      <Search/>
-   
-    </div>
-  );
+constructor (props){
+  super(props);
+
+  this.state = {
+    items: [],
+    Dataisloaded: false
+  };
 }
 
+}
 export default App;
